@@ -1,7 +1,7 @@
 ## UWG_Matlab
 Urban Weather Generator
 
-Repository for keeping versions of UWG Matlab code based on Bruno Bueno's work with Leslie Norford from MIT.
+Repository for keeping versions of UWG Matlab code based on Bruno Bueno's work with Leslie Norford at MIT.
 
 ### Known Issues
 All inquiries generally fall into two categories:
@@ -10,8 +10,9 @@ All inquiries generally fall into two categories:
 * Layer Thickness - The UWG uses explicit time-step and thus having a wall or roof layer such as membrane that is too thin, or a layer will high thermal conductivity (e.g. metal decking) will result in fatal error. These layers should be incorporated into a single layer that is representative of the overall optical property, thermal conductivity and thermal capacitance. 
 
 ### Contact
-Leslie Keith Norford <lnorford@mit.edu>
+Leslie K. Norford   <lnorford@mit.edu>
 
 ### History
-* June, 2016 - UWG updated to version 4.1, based on Joseph Yang's master's thesis (2016). Changes include addition of three input file format (XML, Matlab, Excel), and update of the internal algorithm. 
-* Oct, 2015 - Github Repository created by Joseph Yang with latest version of UWG, based on Aiko Akano's master's thesis.
+* Sep, 2018 - UWG Matlab version tested in Abu Dhabi, based on Jiachen Mao's SM thesis (2018).
+* June, 2016 - UWG updated to version 4.1, based on Joseph Yang's SM thesis (2016). Changes include addition of three input file format (XML, Matlab, Excel), and update of the internal algorithm. 
+* Oct, 2015 - Github Repository created by Joseph Yang with latest version of UWG, based on Aiko Akano's SM thesis.
