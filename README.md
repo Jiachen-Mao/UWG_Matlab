@@ -15,4 +15,4 @@ Leslie K. Norford   <lnorford@mit.edu>
 ### History
 * Sep, 2018 - UWG Matlab version tested in Abu Dhabi, based on Jiachen Mao's SM thesis (2018).
 * June, 2016 - UWG updated to version 4.1, based on Joseph Yang's SM thesis (2016). Changes include addition of three input file format (XML, Matlab, Excel), and update of the internal algorithm. 
-* Oct, 2015 - Github Repository created by Joseph Yang with latest version of UWG, based on Aiko Akano's SM thesis.
+* Oct, 2015 - Github Repository created by Joseph Yang with latest version of UWG, based on Aiko Akano's SM thesis (2015).
