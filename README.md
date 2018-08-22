@@ -7,7 +7,7 @@ As of 2018, only the Excel interface (i.e., xlsm file) can be used in the UWG Ma
 
 
 ### Implementation
-* Initaite the UWG.m function
+* Initiate the UWG.m function
 * Select the input .epw and .xlsm files as well as the save location for the output .epw file.
 * If the output .epw file is enabled in the input Excel interface, it will become available in the selected location after the simulation. If not [default], it will not show up even though you may have selected a save location.
 * If the output .xlsx file is enabled in the input Excel interface [default], it will become available as '\output\UWGoutput.xlsx' after the simulation. If not, it will not show up.
