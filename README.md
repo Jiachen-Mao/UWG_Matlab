@@ -5,7 +5,7 @@ Repository for keeping versions of UWG Matlab code based on Bruno Bueno's PhD wo
 
 The UWG.m file can initiate the urban microclimate simulation for specific case study.
 
-As of 2018, only the Excel interface (i.e., xlsm file) can be used in the UWG Matlab version. The newest UWG is now embedded in the Dragonfly plugin for Grasshopper written in Python. See more details at: <https://github.com/chriswmackey/Dragonfly>.
+As of 2018, only the Excel interface (i.e., xlsm file) can be used in the UWG Matlab version. The newest UWG is now written in Python and embedded in the Dragonfly plugin for Grasshopper with various input file formats. See more details at: <https://github.com/chriswmackey/Dragonfly>.
 
 
 ### Known Issues
