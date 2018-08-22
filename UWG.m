@@ -195,7 +195,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
         albVeg = num(26);       % Vegetation albedo
         latGrss = num(27);      % latent fraction of grass
         latTree = num(28);      % latent fraction of tree
-        rurVegCover = num(28);  % rural vegetation cover
+        rurVegCover = num(29);  % rural vegetation cover
 
         nightStart = 18;        % arbitrary values (not used for XLSM)
         nightEnd = 8;
@@ -209,6 +209,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
         SchTraffic = transpose(SchTraffic);
 
         % Define BEM for each DOE type (read the fraction)
+        readDOE; % Load DOE building data from the Excel file(s)
         load ('RefDOE.mat');
  
         [zone, ~, ~] = xlsread(xml_location,1,'AA3');
@@ -716,8 +717,8 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
     if strcmp('Yes',writeEPW)
         disp('Calculating new Temperature and humidity values')
         for iJ = 1:numel(UCMData)
-            epwinput.values{iJ+simTime.timeInitial-8,7}{1,1} = num2str(UCMData(iJ).canTemp- 273.15,'%0.1f'); % dry bulb temperature  [°C]
-            epwinput.values{iJ+simTime.timeInitial-8,8}{1,1} = num2str(UCMData(iJ).Tdp,'%0.1f'); % dew point temperature [°C]
+            epwinput.values{iJ+simTime.timeInitial-8,7}{1,1} = num2str(UCMData(iJ).canTemp- 273.15,'%0.1f'); % dry bulb temperature  [Â°C]
+            epwinput.values{iJ+simTime.timeInitial-8,8}{1,1} = num2str(UCMData(iJ).Tdp,'%0.1f'); % dew point temperature [Â°C]
             epwinput.values{iJ+simTime.timeInitial-8,9}{1,1} = num2str(UCMData(iJ).canRHum,'%0.0f'); % relative humidity     [%]
             epwinput.values{iJ+simTime.timeInitial-8,22}{1,1} = num2str(WeatherData(iJ).wind,'%0.1f'); % wind speed [m/s]
         end
@@ -760,8 +761,9 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
         % Open Excel file
         Workbook=Workbooks.Open(file);
         Excel.Visible=1;
-
-        output = 'UWGoutput.xlsx';
+        
+        currentPath=pwd;
+        output = strcat(currentPath,'\output\UWGoutput.xlsx');
         disp(['Writing output file: ',output]);
 
         T_rur = transpose([WeatherData.temp])-273.15;
