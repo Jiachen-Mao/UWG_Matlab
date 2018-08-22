@@ -755,7 +755,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
         
         % Open Excel Automation server
         currentPath=pwd;
-        output = strcat(currentPath,'\output\UWGoutput.xlsx'); % This must be full path name
+        file = strcat(currentPath,'\output\UWGoutput.xlsx'); % This must be full path name
         Excel = actxserver('Excel.Application');
         Workbooks = Excel.Workbooks;
     
