@@ -2,8 +2,10 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
     % =========================================================================
     %  THE URBAN WEATHER GENERATOR
     % =========================================================================
-    % Orig. Author: B. Bueno & edited by A. Nakano & Lingfu Zhang
-    % Last modified by Joseph Yang (joeyang@mit.edu) - May, 2016
+    % Original Author: Bruno Bueno
+    % Edited by: Aiko Nakano, Lingfu Zhang, and Joseph Yang
+    % Last modified by Jiachen Mao - Mar, 2017
+    % Principal Investigator: Leslie K. Norford
     % 
     % Notes
     % a. When compiling, add 'z_meso.txt', 'RefDOE.mat','SchDef.m' to the list of files
