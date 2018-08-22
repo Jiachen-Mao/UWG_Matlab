@@ -2,13 +2,13 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
     % =========================================================================
     %  THE URBAN WEATHER GENERATOR
     % =========================================================================
-    % Original Author: Bruno Bueno
+    % Original author: Bruno Bueno
     % Edited by: Aiko Nakano, Lingfu Zhang, and Joseph Yang
     % Last modified by Jiachen Mao - Mar, 2017
     % Principal Investigator: Leslie K. Norford
     % 
     % Notes
-    % a. When compiling, add 'z_meso.txt', 'RefDOE.mat','SchDef.m' to the list of files
+    % a. When compiling, add 'z_meso.txt', 'RefDOE.mat', and 'SchDef.m' to the list of files
     % b. Program description can be found in the following papers & websites
     %   - Joseph Yang's Master Thesis (2016)
     %   - Jiachen Mao's Master Thesis (2018)
@@ -212,7 +212,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
         SchTraffic = transpose(SchTraffic);
 
         % Define BEM for each DOE type (read the fraction)
-        readDOE; % Load DOE building data from the Excel file(s)
+        readDOE; % Load DOE building data from the Excel file(s) to the MAT file
         load ('RefDOE.mat');
  
         [zone, ~, ~] = xlsread(xml_location,1,'AA3');
@@ -508,7 +508,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
     end  
 
     % =========================================================================
-    % Section 6 - HVAC Autosizing (unlimited cooling & heating)
+    % Section 4 - HVAC Autosizing (unlimited cooling & heating)
     % =========================================================================
     for j = 1:numel(BEM)
         if autosize
@@ -518,7 +518,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
     end
 
     % =========================================================================
-    % Section 7 - UWG main section
+    % Section 5 - UWG main section
     % =========================================================================
     N = simTime.days * 24;
     n = 0;
@@ -715,7 +715,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
     progressbar(1); % Close progress bar
 
     % =========================================================================
-    % Section 8 - Writing new EPW file
+    % Section 6 - Writing new EPW file
     % =========================================================================
     if strcmp('Yes',writeEPW)
         disp('Calculating new Temperature and humidity values')
@@ -747,7 +747,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
     end
 
     % =========================================================================
-    % Section 9 - Clean up & write data to Excel/Mat file
+    % Section 7 - Clean up & write data to Excel/Mat file
     % =========================================================================
 
     if strcmp('Yes',writeMAT)
