@@ -15,8 +15,11 @@ All inquiries generally fall into two categories:
 
 ### Contact
 Leslie K. Norford
+
 George Macomber (1948) Professor in Construction Management
+
 Massachusetts Institute of Technology
+
 <lnorford@mit.edu>
 
 ### History
