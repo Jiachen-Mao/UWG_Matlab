@@ -1,4 +1,4 @@
-## UWG_Matlab
+## UWG Matlab version
 Urban Weather Generator (UWG)
 
 Repository for keeping versions of UWG Matlab code based on Bruno Bueno's work with Leslie Norford at MIT.
