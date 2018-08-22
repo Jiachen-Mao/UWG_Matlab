@@ -975,6 +975,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
         
         % Write UWG version & disclaimer
         release = strcat('Urban Weather Generator v',num2str(ver));
+        fullyScripted = 1;
         disclaimer = 'DISCLAIMER: The data is provided as is without warranty of any kind, either expressed or implied.';
 
         sheet = get(Sheets, 'Item', 1);
