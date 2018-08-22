@@ -11,7 +11,8 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
     % a. When compiling, add 'z_meso.txt', 'RefDOE.mat','SchDef.m' to the list of files
     % b. Program description can be found in the following papers & websites
     %   - Joseph Yang's Master Thesis (2016)
-    %   - https://github.com/hansukyang/UWG_Matlab
+    %   - Jiachen Mao's Master Thesis (2018)
+    %   - https://github.com/Jiachen-Mao/UWG_Matlab
     % =========================================================================
 
     close all;
