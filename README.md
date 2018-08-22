@@ -1,7 +1,7 @@
 ## UWG Matlab version
 Urban Weather Generator (UWG)
 
-Repository for keeping versions of UWG Matlab code based on Bruno Bueno's PhD work with Porf. Leslie K. Norford at MIT.
+Repository for keeping versions of UWG Matlab code based on Bruno Bueno's PhD work with Leslie K. Norford at MIT.
 
 The UWG.m file can initiate the urban microclimate simulation for specific case study.
 
