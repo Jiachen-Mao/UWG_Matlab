@@ -754,7 +754,8 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
     if strcmp('Yes',writeXLS)
         
         % Open Excel Automation server
-        file = 'UWGoutput.xlsx'; % This must be full path name
+        currentPath=pwd;
+        output = strcat(currentPath,'\output\UWGoutput.xlsx'); % This must be full path name
         Excel = actxserver('Excel.Application');
         Workbooks = Excel.Workbooks;
     
@@ -762,8 +763,7 @@ function [new_climate_file] = UWG(CL_EPW_PATH,CL_EPW,CL_XML_PATH,CL_XML,CL_RE_PA
         Workbook=Workbooks.Open(file);
         Excel.Visible=1;
         
-        currentPath=pwd;
-        output = strcat(currentPath,'\output\UWGoutput.xlsx');
+        output = 'UWGoutput.xlsx';
         disp(['Writing output file: ',output]);
 
         T_rur = transpose([WeatherData.temp])-273.15;
