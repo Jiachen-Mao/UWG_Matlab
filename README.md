@@ -1,7 +1,9 @@
 ## UWG_Matlab
 Urban Weather Generator
 
-Repository for keeping versions of UWG Matlab code based on Bruno Bueno's work with Leslie Norford at MIT.
+Repository for keeping versions of UWG Matlab code based on Bruno Bueno's work with Leslie Norford at MIT. The UWG.m file can initiate the urban microclimate simulation for specific case study.
+
+As of 2018, only the Excel interface (i.e., xlsm file) can be used in the UWG Matlab version. The newest UWG is now embedded in the Dragonfly plugin for Grasshopper written in Python. See more details at: <https://github.com/chriswmackey/Dragonfly>.
 
 ### Known Issues
 All inquiries generally fall into two categories:
