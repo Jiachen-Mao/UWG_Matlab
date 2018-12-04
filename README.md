@@ -28,6 +28,6 @@ Massachusetts Institute of Technology<br/>
 
 ### History
 * Sep, 2018 - UWG model updated and tested in Abu Dhabi, based on Jiachen Mao's SM thesis (2018). Only the Excel interface can be used within the Matlab version.
-* June, 2016 - UWG updated based on Joseph Yang's SM thesis (2016). Changes include addition of three input file formats (XML, Matlab, and Excel), and update of the internal algorithms. 
+* Jun, 2016 - UWG updated based on Joseph Yang's SM thesis (2016). Changes include addition of three input file formats (XML, Matlab, and Excel), and update of the internal algorithms. 
 * Oct, 2015 - Github repository created by Joseph Yang for UWG, based on Aiko Nakano's SM thesis (2015).
 * Sep, 2012 - Urban Weather Generator (UWG) created, based on Bruno Bueno's PhD thesis (2012).
