@@ -3,14 +3,14 @@ Urban Weather Generator (UWG)
 
 Repository for keeping versions of UWG Matlab code based on Bruno Bueno's PhD work with Leslie K. Norford at MIT.
 
-As of September 2018, only the Excel interface (i.e., xlsm file) can be used in the UWG Matlab version. The newest UWG is now written in Python and is embedded in the Dragonfly plugin for Grasshopper with various input file formats. See more details at: <https://github.com/chriswmackey/Dragonfly>.
+As of September 2018, only the Excel interface (i.e., xlsm file) can be used as the input file in the UWG Matlab version. The newest UWG is now written in Python and is embedded in the Dragonfly plugin for Grasshopper with various input file formats. See more details at: <https://github.com/chriswmackey/Dragonfly>.
 
 
 ### Implementation
-* Initiate the UWG.m function.
-* Select the input .epw and .xlsm files (from '...\data\') as well as the save location for the output .epw file.
-* If the output .epw file is enabled in the input Excel interface, it will become available in the selected location after the simulation. If not [default], it will not show up even though you may have selected a save location.
-* If the output .xlsx file is enabled in the input Excel interface [default], it will become available as '...\output\UWGoutput.xlsx' after the simulation. If not, it will not show up.
+* Initiate the **UWG.m** function.
+* Select the input **.epw** and **.xlsm** files (from '...\data\') as well as the save location for the output .epw file.
+* If the output **.epw** file is enabled in the input Excel interface, it will become available in the selected location after the simulation. If not [default], it will not show up even though you may have selected a save location.
+* If the output **.xlsx** file is enabled in the input Excel interface [default], it will become available as '...\output\UWGoutput.xlsx' after the simulation. If not, it will not show up.
 
 ### Known Issues
 All inquiries generally fall into two categories:
