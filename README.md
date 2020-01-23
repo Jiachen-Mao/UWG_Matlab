@@ -27,6 +27,7 @@ Massachusetts Institute of Technology<br/>
 
 
 ### History
+* Jun, 2019 - UWG model used for design workflow integration, based on [Hellen Rose Anyango Awino's SM thesis (2019)](https://dspace.mit.edu/handle/1721.1/123577).
 * Sep, 2018 - UWG model updated and tested in Abu Dhabi, based on [Jiachen Mao's SM thesis (2018)](https://dspace.mit.edu/handle/1721.1/120873). Only the Excel interface can be used within the Matlab version.
 * Jun, 2016 - UWG updated based on [Joseph Yang's SM thesis (2016)](https://dspace.mit.edu/handle/1721.1/107347). Changes include addition of three input file formats (XML, Matlab, and Excel), and update of the internal algorithms. 
 * Oct, 2015 - Github repository created by Joseph Yang for UWG, based on [Aiko Nakano's SM thesis (2015)](https://dspace.mit.edu/handle/1721.1/99251).
