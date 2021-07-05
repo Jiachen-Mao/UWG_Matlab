@@ -27,7 +27,7 @@ Massachusetts Institute of Technology<br/>
 
 
 ### History
-* Apr, 2021 - UWG research and development summarized over the past decade, based on a [Springer book chapter (2021)](https://github.com/Jiachen-Mao/UWG_Matlab/blob/master/reference/mao-norford-uwg-2021.pdf).
+* Apr, 2021 - UWG research and development summarized over the past decade, based on a [Springer book chapter (2021)](https://github.com/Jiachen-Mao/UWG_Matlab/blob/master/reference/mao-norford-uwg-2021.pdf) by Jiachen Mao and Leslie K. Norford.
 * Jun, 2019 - UWG model tested for design workflow integration, based on [Hellen Rose Anyango Awino's SM thesis (2019)](https://dspace.mit.edu/handle/1721.1/123577).
 * Sep, 2018 - UWG model updated and tested in Abu Dhabi, based on [Jiachen Mao's SM thesis (2018)](https://dspace.mit.edu/handle/1721.1/120873). Only the Excel interface can be used within the Matlab version.
 * Jun, 2016 - UWG updated based on [Joseph Yang's SM thesis (2016)](https://dspace.mit.edu/handle/1721.1/107347). Changes include addition of three input file formats (XML, Matlab, and Excel), and update of the internal algorithms. 
